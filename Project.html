@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="container">
+        <div class="logo">
+            <span>🎉</span>
+        </div>
+        <div class="navbar" id="navbar">
+            <span onclick="scrollToSection('home')">Home</span>
+            <span onclick="scrollToSection('services')">Services</span>
+            <span onclick="scrollToSection('about')">About</span>
+            <span onclick="scrollToSection('gallery')">Gallery</span>
+            <span onclick="scrollToSection('price')">Price</span>
+            <span onclick="scrollToSection('contact')">Contact</span>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="content">
+            <h1>Event Management System<br>Best Event Organizers</h1>
+            <button class="click" onclick="scrollToSection('contact')">Contact Us</button>
+            <button class="click" onclick="scrollToSection('Booking')">
+            <div><a href="form.html">Booking</a></div> </button>
+        </div>
+        
+        
+        <div class="img" id="gallery">
+            <span>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=500" alt="Corporate Event">
+                </figure> 
+                <figcaption>"Celebrating success, one team at a time!"</figcaption>
+            </span>
+            <span>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=500" alt="Party Event">
+                </figure>
+                <figcaption>"Lights, laughter, and lots of fun! 🎊"</figcaption>
+            </span>
+            <span>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=500" alt="Festival">
+                </figure>
+                <figcaption>"Good vibes, good times! 🎉"</figcaption>
+            </span>
+            <span>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=500" alt="Wedding">
+                </figure>
+                <figcaption>"Two hearts, one love, endless celebrations 💖"</figcaption>
+            </span>
+        </div>
+
+        <div id="services">
+            <h1 class="heading">Our Services</h1>
+            <div class="card_first">
+                <div>
+                    <h2>🏛️ Venue Selection</h2>
+                    <p>Our event venue is carefully selected to provide comfort, accessibility, and a great experience for all guests. It is easy to reach, with proper parking, security, and modern facilities. The space includes well-planned seating, a professional stage setup, and excellent lighting and sound arrangements.</p>
+                </div>
+                <div>
+                    <h2>💌 Invitation Card</h2>
+                    <p>You are warmly invited to join us for a special event filled with joy, celebration, and memorable moments. Come and be part of an amazing experience with beautiful arrangements, great company, and a pleasant atmosphere. Your presence will make the occasion even more special for us.</p>
+                </div>
+                <div>
+                    <h2>🎭 Entertainment</h2>
+                    <p>Our event offers exciting entertainment to keep everyone engaged and energized. Enjoy live performances, music, fun activities, and interactive sessions that create a joyful and memorable atmosphere. From relaxing moments to high-energy fun, our entertainment arrangements ensure that every guest has a great time.</p>
+                </div>
+            </div>
+            <div class="card_second">
+                <div>
+                    <h2>🍽️ Food and Drinks</h2>
+                    <p>We serve delicious food and refreshing drinks prepared with care and quality ingredients. Our menu includes a variety of tasty dishes and beverages to suit every preference. Clean service, great taste, and a pleasant dining experience make our food and drinks a special part of the event.</p>
+                </div>
+                <div>
+                    <h2>📸 Photos and Videos</h2>
+                    <p>We capture every special moment of the event with professional photos and videos. From candid shots to highlight reels, our media team ensures your memories are preserved beautifully. Relive the best moments and share the experience with stunning visuals.</p>
+                </div>
+                <div>
+                    <h2>🍴 Custom Food</h2>
+                    <p>We offer custom food options to match your taste and event theme. From menu selection to special dietary needs, everything is planned as per your preference. Fresh ingredients and personalized service ensure a delicious and memorable dining experience for every guest.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="about">
+            <h1 class="heading">About Us</h1>
+            <figure class="img2">
+                <img src="https://images.unsplash.com/photo-1496024840928-4c417adf211d?w=500" alt="Live Entertainment" width="500" height="400">
+            </figure>
+            <figcaption style="text-align: center; font-style: italic; margin-top: 10px;">Live entertainment to make your event unforgettable</figcaption>
+            <p class="about-text">We are passionate about creating memorable and well-organized events. With a focus on quality, creativity, and customer satisfaction, we handle every detail to make your occasion special. From planning to execution, our team works to deliver a smooth and enjoyable experience for everyone.</p>
+        </div>
+
+        <div id="price">
+            <h1 class="heading">Our Price</h1>
+            <div class="card_third">
+                <div>
+                    <h2>Corporate Event</h2>
+                    <h3>₹ 4,00,000</h3>
+                    <p>&gt; Decoration</p>
+                    <p>&gt;Food and Drinks</p>
+                    <p>&gt; Music</p>
+                    <p>&gt; Lighting</p>
+                    <p>&gt;Photography</p>
+                    <p>&gt;Entertainment</p>
+                </div>
+                <div>
+                    <h2>College Fest</h2>
+                    <h3>₹ 5,00,000</h3>
+                    <p>&gt; Decoration</p>
+                    <p>&gt;Food and Drinks</p>
+                    <p>&gt; Music</p>
+                    <p>&gt;Lighting</p>
+                    <p>&gt; Photography</p>
+                    <p>&gt; Entertainment</p>
+                </div>
+                <div>
+                    <h2>Birthday Party</h2>
+                    <h3>₹ 1,00,000</h3>
+                    <p>&gt; Decoration</p>
+                    <p>&gt; Food and Drinks</p>
+                    <p>&gt; Music</p>
+                    <p> Lighting</p>
+                    <p>&gt; Photography</p>
+                    <p>&gt;Entertainment</p>
+                </div>
+                <div>
+                    <h2>Wedding Event</h2>
+                    <h3>₹ 6,00,000</h3>
+                    <p>&gt; Decoration</p>
+                    <p>&gt; Food and Drinks</p>
+                    <p>&gt; Music</p>
+                    <p>&gt; Lighting</p>
+                    <p>&gt; Photography</p>
+                    <p>&gt; Entertainment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div>
+            <h2>Branches</h2>
+            <p>Kolkata</p>
+            <p>Mumbai</p>
+            <p>Bihar</p>
+            <p>Delhi</p>
+            <p>Noida</p>
+            <p>Ludhiana</p>
+        </div>
+        <div>
+            <h2>Quick Links</h2>
+            <p onclick="scrollToSection('home')">Home</p>
+            <p onclick="scrollToSection('services')">Services</p>
+            <p onclick="scrollToSection('about')">About</p>
+            <p onclick="scrollToSection('gallery')">Gallery</p>
+            <p onclick="scrollToSection('price')">Price</p>
+        </div>
+        <div>
+            <h2>Contact Us</h2>
+            <p>📞 Phone: +91-9876543210</p>
+            <p>📧 Email: info@eventplanner.com</p>
+            <p>📍 Address: 123 Event Street, Delhi, India</p>
+        </div>
+        <div>
+            <h2>Follow Us</h2>
+            <p><span class="bi bi-instagram"></span> Instagram</p>
+            <p><span class="bi bi-facebook"></span> Facebook</p>
+            <p><span class="bi bi-youtube"></span> Youtube</p>
+            <p><span class="bi bi-linkedin"></span> Linkedin</p>
+            <p><span class="bi bi-twitter"></span> Twitter</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
